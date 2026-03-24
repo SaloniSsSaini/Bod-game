@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BODMAS AI Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🧠 BODMAS AI Game</h1>
+
+    <input type="text" id="playerName" placeholder="Enter your name">
+
+    <button onclick="toggleDark()">🌙 Toggle Mode</button>
+
+    <div class="card">
+        <div id="expression"></div>
+
+        <p>👉 Click or Drag correct operation (BODMAS)</p>
+
+        <div id="feedback"></div>
+
+        <div class="stats">
+            ❤️ <span id="lives">3</span> |
+            ⭐ <span id="score">0</span> |
+            🔥 <span id="combo">0</span>
+        </div>
+    </div>
+
+    <button onclick="nextStep()" class="btn">Next</button>
+
+    <h2>🏆 Leaderboard</h2>
+    <div id="leaderboard"></div>
+
+</div>
+
+<!-- SOUND -->
+<audio id="correctSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_115b9b0d52.mp3"></audio>
+<audio id="wrongSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_1b8c3c4e60.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
